@@ -1,4 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&family=Questrial&display=swap");
+/* Customr Scroll Bar */
+/* Width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* track */
+::-webkit-scrollbar-track {
+  background-color: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(68, 68, 68);
+}
+
+/* Handle On Hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #3bdbe6;
+}
 
 html {
   scroll-behavior: smooth;
