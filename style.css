@@ -1,4 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Questrial&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&family=Questrial&display=swap");
+/* Customr Scroll Bar */
+/* Width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* track */
+::-webkit-scrollbar-track {
+  background-color: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(68, 68, 68);
+}
+
+/* Handle On Hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #3bdbe6;
+}
 
 html {
   scroll-behavior: smooth;
@@ -18,12 +37,69 @@ body {
   overflow-x: hidden;
 }
 
-.bg-img {
+.header-bg-img {
   width: 100%;
-  /* height: 100vh; */
   background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-  url(images/Plain\ background\ 4.jpg);
+    url(images/background.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.sale-bg-img {
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url(images/wallpapertip_sale.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#sale .countdown > #day:after {
+  content: "Days";
+  font-size: medium;
+}
+
+#sale .countdown > #hour:after {
+  content: "Hours";
+  font-size: medium;
+}
+
+#sale .countdown > #minute:after {
+  content: "Minutes";
+  font-size: medium;
+}
+
+#sale .countdown > #second:after {
+  content: "Seconds";
+  font-size: medium;
+}
+
+.use-case-bg {
+  background-color: #0a0a0a;
+}
+
+.useCase-image {
+  position: relative;
+  width: auto;
+  transform: rotate(-15deg);
+}
+
+.usecase-img-box {
+  /* transform: translateX(-50%) rotate(10deg); */
+  /* height: auto; */
+  /* max-width: fit-content; */
+  height: 200px !important;
+  width: 200px !important;
+}
+
+hr {
+  color: white !important;
+}
+
+.br-clr {
+  border-color: transparent !important;
+}
+.br-radius {
+  border-radius: unset !important;
 }
